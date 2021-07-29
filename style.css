@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html{
+    background-color:rgb(50, 93, 235);
+    color: whitesmoke;
+    font-size: 62.5%;
+}
+
+
+.header{
+    font-family: monospace;
+    margin:0.4em;
+    padding:1em;
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.player{
+    width:70px;
+    display: block;
+    margin:0 auto;
+    padding-bottom:2em;
+}
+
+.players{
+    font-size:1.2em;
+    text-align: center;
+    font-family: -apple-system;
+}
+
+.player-name{
+    padding:1em;
+    text-align: center;
+    font-family: fantasy;
+    font-size:large;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:3em auto;
+}
+
+.area{    
+    background-color: whitesmoke;
+    border-radius:15px;
+    box-shadow: 2px 2px 2px 2px rgb(29, 28, 28);
+    padding:0.5em;
+}
+
+
+.choices{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.choices h2{
+    color:#333;
+    font-size:3em;
+    font-family: monospace;
+    text-align: center;
+}
+
+.choice{
+    padding:1.2em;
+    margin:1em;
+    background-color:rgb(41, 43, 44);
+    border-radius: 15px;
+
+}
+
+.choice:hover{
+    transform:scale(0.98);
+    cursor: pointer;
+}
+
+.score{    
+    background-color:rgb(29, 28, 28);
+    box-shadow: 2px 2px 2px 2px rgb(44, 42, 42);
+    border-radius: 15px;
+    font-size:3.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1.5em;
+}
+
+.score-board{
+    display: flex;
+}
+
+.score-board h2 {    
+    color:yellowgreen;
+    padding:0.5em;
+}
+
+
+.score h3 {
+    font-size:1.4em;
+}
+
+#aqua{
+    color:aqua;
+}
+
+
+
+#again{
+    font-size:3em;
+    padding:1em;
+    background-color: aqua;
+    color:black;
+    text-decoration: none;
+    border-radius: 15px;
+    position:absolute;
+    top:50%;
+    right:43%;
+    display:none;
+}
+
+#again:hover{
+    background-color: rgb(13, 202, 202);
+}
+
+#again:active{
+    background-color: green;
+}
